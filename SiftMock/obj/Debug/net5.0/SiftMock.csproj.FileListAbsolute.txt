@@ -1,0 +1,15 @@
+/Users/HPhifer/RiderProjects/SiftMock/siftmock/SiftMock/obj/Debug/net5.0/SiftMock.csproj.AssemblyReference.cache
+/Users/HPhifer/RiderProjects/SiftMock/siftmock/SiftMock/obj/Debug/net5.0/SiftMock.GeneratedMSBuildEditorConfig.editorconfig
+/Users/HPhifer/RiderProjects/SiftMock/siftmock/SiftMock/obj/Debug/net5.0/SiftMock.AssemblyInfoInputs.cache
+/Users/HPhifer/RiderProjects/SiftMock/siftmock/SiftMock/obj/Debug/net5.0/SiftMock.AssemblyInfo.cs
+/Users/HPhifer/RiderProjects/SiftMock/siftmock/SiftMock/obj/Debug/net5.0/SiftMock.csproj.CoreCompileInputs.cache
+/Users/HPhifer/RiderProjects/SiftMock/siftmock/SiftMock/bin/Debug/net5.0/SiftMock.deps.json
+/Users/HPhifer/RiderProjects/SiftMock/siftmock/SiftMock/bin/Debug/net5.0/SiftMock.runtimeconfig.json
+/Users/HPhifer/RiderProjects/SiftMock/siftmock/SiftMock/bin/Debug/net5.0/SiftMock.runtimeconfig.dev.json
+/Users/HPhifer/RiderProjects/SiftMock/siftmock/SiftMock/bin/Debug/net5.0/SiftMock.dll
+/Users/HPhifer/RiderProjects/SiftMock/siftmock/SiftMock/bin/Debug/net5.0/ref/SiftMock.dll
+/Users/HPhifer/RiderProjects/SiftMock/siftmock/SiftMock/bin/Debug/net5.0/SiftMock.pdb
+/Users/HPhifer/RiderProjects/SiftMock/siftmock/SiftMock/obj/Debug/net5.0/SiftMock.dll
+/Users/HPhifer/RiderProjects/SiftMock/siftmock/SiftMock/obj/Debug/net5.0/ref/SiftMock.dll
+/Users/HPhifer/RiderProjects/SiftMock/siftmock/SiftMock/obj/Debug/net5.0/SiftMock.pdb
+/Users/HPhifer/RiderProjects/SiftMock/siftmock/SiftMock/obj/Debug/net5.0/SiftMock.genruntimeconfig.cache

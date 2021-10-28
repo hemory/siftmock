@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3f/0+VzkAaSXpRxQe2X6UPEU+K1tVz79ouFF3ia/sLlyGDEnEeNKvlzmppbN1rPQFr5DvIAn5uBPZ5jAfoZc2Q==",
+  "dgSpecHash": "T2oxI6uGoH6iBc0ZQeLfT8KZdyqyg84PPVZrteCiE0b2EG3ElCrAhaHzoZgB96m2kb+PujQbqPTBcDhZaFqtmw==",
   "success": true,
-  "projectFilePath": "/Users/HPhifer/RiderProjects/SiftMock/SiftMock/SiftMock.csproj",
+  "projectFilePath": "/Users/HPhifer/RiderProjects/SiftMock/siftmock/SiftMock/SiftMock.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

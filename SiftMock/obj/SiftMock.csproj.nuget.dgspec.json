@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/HPhifer/RiderProjects/SiftMock/SiftMock/SiftMock.csproj": {}
+    "/Users/HPhifer/RiderProjects/SiftMock/siftmock/SiftMock/SiftMock.csproj": {}
   },
   "projects": {
-    "/Users/HPhifer/RiderProjects/SiftMock/SiftMock/SiftMock.csproj": {
+    "/Users/HPhifer/RiderProjects/SiftMock/siftmock/SiftMock/SiftMock.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/HPhifer/RiderProjects/SiftMock/SiftMock/SiftMock.csproj",
+        "projectUniqueName": "/Users/HPhifer/RiderProjects/SiftMock/siftmock/SiftMock/SiftMock.csproj",
         "projectName": "SiftMock",
-        "projectPath": "/Users/HPhifer/RiderProjects/SiftMock/SiftMock/SiftMock.csproj",
+        "projectPath": "/Users/HPhifer/RiderProjects/SiftMock/siftmock/SiftMock/SiftMock.csproj",
         "packagesPath": "/Users/HPhifer/.nuget/packages/",
-        "outputPath": "/Users/HPhifer/RiderProjects/SiftMock/SiftMock/obj/",
+        "outputPath": "/Users/HPhifer/RiderProjects/SiftMock/siftmock/SiftMock/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/HPhifer/.nuget/NuGet/NuGet.Config"
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
         }
       }
     }

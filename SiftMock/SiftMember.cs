@@ -6,28 +6,27 @@ namespace SiftMock
 {
     class SiftMember
     {
-        private string name;
-        private DateTime anniversary;
-        private string jobTitle;
-        private string email;
-        private List<string> skills;
+        public string Name { get; set; }
+        public DateTime Anniversary { get; set; }
+        public string JobTitle { get; set; }
+        public string Email { get; set; }
+        public List<string> Skills { get; set; }
 
-        public SiftMember(string n, string j, string e, int month, int day, int year)
+        public SiftMember(string name, DateTime anniversary, string jobTitle, string email)
         {
-            name = n;
-            jobTitle = j;
-            email = e;
-            anniversary = new DateTime(year, month, day);
-            skills = new List<string>();
+            Name = name;
+            Anniversary = anniversary;
+            JobTitle = jobTitle;
+            Email = email;
+            Skills = new List<string>();
         }
-
-        public string Name { get => name; }
-
+    
+        
         public bool AddSkill(string skill)
         {
-            if (!skills.Contains(skill))
+            if (!Skills.Contains(skill))
             {
-                skills.Add(skill);
+                Skills.Add(skill);
                 return true;
             }
             return false;
@@ -35,10 +34,10 @@ namespace SiftMock
 
         public override string ToString()
         {
-            string output = $"Name: {name}\nJob Title: {jobTitle}\nAnniversary: {anniversary.ToString("MM/dd/yyyy")}\nEmail: {email}\nSkills: ";
-            foreach (string s in skills)
+            string output = $"Name: {Name}\nJob Title: {JobTitle}\nAnniversary: {Anniversary.ToString("MM/dd/yyyy")}\nEmail: {Email}\nSkills: ";
+            foreach (string skill in Skills)
             {
-                output += $"{s}\t";
+                output += $"{skill}\t";
             }
             output += "\n\n";
             return output;

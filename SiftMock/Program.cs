@@ -7,42 +7,47 @@ namespace SiftMock
     {
         static void Main()
         {
-            List<SiftMember> sift = new List<SiftMember>();
-            SiftMember me = new SiftMember("Riley Shirk", "Associate Program Manager",
-                                                "rileyshirk@quickenloans.com", 11, 18, 2019);
-            me.AddSkill("Programming");
-            me.AddSkill("Writing Assessments");
-            sift.Add(me);
+            List<SiftMember> siftMembers = new List<SiftMember>();
+            SiftMember tm = new SiftMember("Jane",new DateTime(2016,02,19), "Program Manager", "jane@rocket.com");
+            tm.AddSkill("Programming");
+            tm.AddSkill("Writing Assessments");
+            siftMembers.Add(tm);
+            
+            
+            
             while (true)
             {
-                Console.Write("Welcome to Sift, what would you like to do?\n");
-                Console.Write("1. Add a team member\n2. Search for a team member\n3. Print all members\n4. Quit\n");
-                Console.Write("Select an option: ");
-                int choice = int.Parse(Console.ReadLine());
+                Console.Write("[1]Add a team member [2]Search for a team member [3]Print all members [4]Quit: ");
+                string choice = Console.ReadLine();
                 switch (choice)
                 {
-                    case 1:
+                    case "1":
                         Console.Write("Enter the team member's name: ");
                         string name = Console.ReadLine();
                         Console.Write("Enter their job title: ");
                         string title = Console.ReadLine();
                         Console.Write("Enter their email: ");
                         string email = Console.ReadLine();
-                        Console.Write("Enter their anniversary (MM dd yyyy): ");
-                        string date = Console.ReadLine();
-                        string[] d = date.Split(" ");
-                        int month = int.Parse(d[0]);
-                        int day = int.Parse(d[1]);
-                        int year = int.Parse(d[2]);
                         
-                        sift.Add(new SiftMember(name, title, email, month, day, year));
+                        Console.Write("Anniversary Month: ");
+                        int anniversaryMonth = int.Parse(Console.ReadLine());
+                        
+                        Console.Write("Anniversary Day: ");
+                        int anniversaryDay = int.Parse(Console.ReadLine());
+
+                        Console.Write("Anniversary Year: ");
+                        int anniversaryYear = int.Parse(Console.ReadLine());
+
+                        siftMembers.Add(new SiftMember(name, new DateTime(anniversaryYear,anniversaryMonth,anniversaryDay),title,email));
                         break;
-                    case 2:
+                    
+                    case "2":
                         Console.Write("Enter the full name of the person you'd like to search for: ");
                         string nameToSearch = Console.ReadLine();
-                        
-                        int index = Search(sift, nameToSearch);
-                        if (index > -1)
+
+                        SiftMember returnedTM = Search(siftMembers, nameToSearch);
+
+                        if ( returnedTM != null)
                         {
                             while (true)
                             {
@@ -52,44 +57,46 @@ namespace SiftMock
                                 {
                                     break;
                                 }
-                                else if (sift[index].AddSkill(skill))
+
+                                if (returnedTM.AddSkill(skill))
                                 {
-                                    Console.WriteLine($"Added {skill} to {sift[index].Name}");
+                                    Console.WriteLine($"Added {skill} to {returnedTM.Name}");
                                 }
                                 else
                                 {
-                                    Console.WriteLine($"{skill} is already a skill for {sift[index].Name}");
+                                    Console.WriteLine($"{skill} is already a skill for {returnedTM.Name}");
                                 }
                             }
                         }
+                        else
+                        {
+                            Console.WriteLine("Team member was not found.");
+                        }
+
                         break;
-                    case 3:
-                        PrintSift(sift);
+                    case "3":
+                        foreach (var teamMember in siftMembers)
+                        {
+                            Console.WriteLine(teamMember.ToString());
+                        }
                         break;
-                    case 4:
+                    case "4":
                         return;
                 }
             }
         }
-        public static int Search(List<SiftMember> l, string nameToSearch)
+        public static SiftMember Search(List<SiftMember> listOfSiftMembers, string nameToSearch)
         {
-            for(int i = 0; i < l.Count; i++)
+            foreach (var member in listOfSiftMembers)
             {
-                if (l[i].Name == nameToSearch)
+                if (member.Name.ToLower() == nameToSearch.ToLower())
                 {
-                    return i;
+                    return member;
                 }
             }
-            return -1;
+            return null;
         }
-
-        public static void PrintSift(List<SiftMember> l)
-        {
-            foreach (SiftMember s in l)
-            {
-                Console.WriteLine(s);
-            }
-        }
+        
     }
 
 }
